@@ -1,0 +1,69 @@
+:root{
+    text-align: center;
+    /* Define all the variable colors */
+
+    /* Light Mode */
+    --light-mode-background: white;
+    --light-mode-text: black;
+
+
+    /* Dark Mode */
+    --dark-mode-background: black;
+    --dark-mode-text: white;
+}
+
+/* Main */
+.dmt i{
+    position: fixed;
+    display: flex;
+    right: 0%;
+    bottom: 0%;
+    font-size: x-large;
+    margin: 1% 1% 1% 1%;
+    border-style: solid;
+    padding: 1% 1% 1% 1%;
+}
+.main-player{
+    display: flexbox;
+    border-radius: 5%;
+    border-style: solid;
+    width: 50%;
+    padding: 1% 1% 1% 1%;
+    text-align: center;
+    position: absolute;
+    left: 25%;
+}
+
+.main-player img{
+    float: left;
+    margin: 2% 2% 2% 2%;
+}
+
+/* Dark Mode */
+.dark-mode{
+    background: var(--dark-mode-background);
+    color: var(--dark-mode-text);
+}
+.dark-mode .dmt i{
+    border-color: var(--dark-mode-text);
+}
+.dark-mode .main-player{
+    border-color: var(--dark-mode-text);
+    color: var(--dark-mode-text);
+    background-color: var(--dark-mode-background);
+}
+
+
+/* Light Mode */
+.light-mode{
+    background: var(--light-mode-background);
+    color: var(--light-mode-text);
+}
+.light-mode .dmt i{
+    border-color: var(--light-mode-text);
+}
+.light-mode .main-player{
+    border-color: var(--light-mode-text);
+    color: var(--light-mode-text);
+    background-color: var(--light-mode-background);
+}
